@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: gray;
+            border: 2px;
+            height: 3444px;
+        }
+        
+        #box1 {
+            /* relative position gives the gap when we change top and right relative to its normal position */
+            position: relative;
+            top: 80px;
+            right: 30px;
+        }
+        /* absolute position is relative to its parent and will not give any gap when changes are made */
+        
+        #bo {
+            position: absolute;
+            top: 30px;
+            left: 34px;
+        }
+        /* sticky gets sticked toward the top when we scroll the box get sticked to   */
+        
+        #box2 {
+            position: sticky;
+            top: 3px;
+            right: 400px;
+        }
+        /* fixed relative to the browser window when we scroll it get fixed */
+        
+        #box3 {
+            position: fixed;
+            right: 300px;
+            top: 30px;
+        }
+        
+        .box {
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+            margin: 4px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+
+</html>
